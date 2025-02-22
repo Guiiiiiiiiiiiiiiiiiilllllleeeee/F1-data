@@ -1,38 +1,7 @@
-@font-face {
-    font-family: 'CustomFont';
-    src: url('./public/fonts/f1.woff2') format('woff2');
-         
-    font-weight: normal;
-    font-style: normal;
+#logof1{
+  width: 50px;
 }
-
-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    height: 100px; /* Ajusta según necesites */
-    margin-top: 50px;
+.f1_logo{
+  width: 100%;
+  margin-top: 30%;
 }
-p{
-    font-family: 'CustomFont';
-}
-
-.logof1 {
-    width: 50%;
-    max-width: 350px; /* Limita el tamaño máximo */
-}
-.menu{
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    height: 500px;
-    width: 80%; /* Ajusta según necesites */
-    margin: 0 auto;
-    margin-top: 50px;
-    background-color: #FF1801;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-
