@@ -1,5 +1,9 @@
 #logof1{
   width: 60px;
+  transition: 0.3s;
+}
+#logof1:hover{
+  transform: scale(1.1);
 }
 .f1_logo{
   width: 100%;
@@ -11,4 +15,7 @@
 }
 #header a{
   transition:  all 0.5s;
+}
+#menu-lnk2{
+  transition: 0.5s;
 }

@@ -3,6 +3,7 @@
   <head>
     
    <script src="https://unpkg.com/@tailwindcss/browser@4"></script> 
+   <script src="./template/main.js"></script>
    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi Página sobre F1 - Noticias y Análisis</title>
@@ -35,7 +36,7 @@
     <meta property="og:url" content="URL_DE_TU_WEB" />
 
     <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./public/imagenes/f1_logo_red.ico" type="image/x-icon" width="32" height="32" />
 
     <!-- CSS -->
    
@@ -49,11 +50,12 @@
             <div class="flex h-16 items-center justify-between">
               <div class="flex items-center">
                 <div class="shrink-0">
-                  <img class="size-4" src="./public/imagenes/f1_logo_blanco.png" alt="Your Company" id="logof1">
+                  <a href="./index.html"><img class="size-4" src="./public/imagenes/f1_logo_blanco.png" alt="Your Company" id="logof1"></a>
                 </div>
                 <div class="hidden md:block">
                   <div class="ml-10 flex items-baseline space-x-4">
                     <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                    
                     <a href="./index.html" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">Home</a>
                     <a href="./drivers.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Drivers</a>
                     <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Teams</a>
@@ -75,11 +77,13 @@
           <div class="md:hidden" id="mobile-menu">
             <div class="space-y-1 px-2 pt-2 pb-3 sm:px-3">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <a href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Home</a>
-              <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Drivers</a>
-              <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Teams</a>
-              <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Tracks</a>
-              
+              <button id="boton" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" onclick="toggleMenu()">show/hide</button>
+              <span id="menu-link2">
+              <a href="./index.html" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page" id="menu-link">Home</a>
+              <a href="./drivers.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"id="menu-link">Drivers</a>
+              <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"id="menu-link">Teams</a>
+              <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"id="menu-link">Tracks</a>
+            </span>
               
             </div>
             
