@@ -19,3 +19,9 @@
 #menu-lnk2{
   transition: 0.5s;
 }
+#driver figure{
+  transition: 0.5s;
+}
+#driver figure:hover{
+  transform: scale(1.1);
+}

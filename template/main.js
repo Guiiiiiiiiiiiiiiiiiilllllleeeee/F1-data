@@ -1,12 +1,11 @@
-function toggleMenu(){  
-    const element2 = document.getElementById('menu-link2');
-    
-    if (window.getComputedStyle(element2).display === 'none') {
-        element2.style.display = 'block';
-    } else {
-        element2.style.display = 'none';
-    }
+function toggleMenu() {
+  const element2 = document.getElementById("menu-link2");
 
+  if (window.getComputedStyle(element2).display === "none") {
+    element2.style.display = "block";
+  } else {
+    element2.style.display = "none";
+  }
 }
 // 1  -> Max Verstappen
 // 4  -> Lando Norris
@@ -28,12 +27,24 @@ function toggleMenu(){
 // 81 -> Oscar Piastri
 // 87 -> Oliver Bearman
 
-function prueba(){
-    document.querySelectorAll("#boton-driver").forEach(button => {//de todos los botones con mismo id obtiene el pulsado
-        button.addEventListener("click", (event) => {
-            console.log("Button clicked:", event.target.innerText);//imprime el nombre
-            console.log("Button value:", event.target.value);//imprime el value
-        });
-    });
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".boton-driver").forEach(button => {
+      button.addEventListener("click", event => {
+        let buttonValue = event.currentTarget.value; // Obtener el valor del botón clicado
+        console.log("Button clicked:", buttonValue);
   
-}
+        // Acciones según el botón presionado
+        switch (buttonValue) {
+          case "1":
+            console.log("Carlos Sainz seleccionado.");
+            break;
+          case "2":
+            console.log("Max Verstappen seleccionado.");
+            break;
+          default:
+            console.log("Otro piloto seleccionado.");
+            break;
+        }
+      });
+    });
+  });
