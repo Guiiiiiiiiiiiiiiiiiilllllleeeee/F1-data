@@ -45,25 +45,17 @@ function mostrarInformacion(num) {
 // 63 -> George Russell
 // 81 -> Oscar Piastri
 // 87 -> Oliver Bearman
-
-document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll(".boton-driver").forEach(button => {
-      button.addEventListener("click", event => {
-        let buttonValue = event.currentTarget.value; // Obtener el valor del botón clicado
-        console.log("Button clicked:", buttonValue);
-  
-        // Acciones según el botón presionado
-        switch (buttonValue) {
-          case "1":
-            console.log("Carlos Sainz seleccionado.");
-            break;
-          case "2":
-            console.log("Max Verstappen seleccionado.");
-            break;
-          default:
-            console.log("Otro piloto seleccionado.");
-            break;
-        }
-      });
-    });
-  });
+const ctx = document.getElementById('myChart').getContext('2d');
+const myChart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ['Verstappen', 'Pérez', 'Leclerc', 'Hamilton'],
+    datasets: [{
+      label: 'Puntos 2024',
+      data: [400, 250, 230, 220],
+      backgroundColor: ['#FF5733', '#33FF57', '#FFBD33', '#33A1FF'],
+      borderColor: ['#FF5733', '#33FF57', '#FFBD33', '#33A1FF'],
+      borderWidth: 1
+    }]
+  }
+});
