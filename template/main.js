@@ -45,6 +45,7 @@ function mostrarInformacion(num) {
 // 63 -> George Russell
 // 81 -> Oscar Piastri
 // 87 -> Oliver Bearman
+
 const ctx = document.getElementById('myChart').getContext('2d');
 const myChart = new Chart(ctx, {
   type: 'bar',
