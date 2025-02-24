@@ -25,3 +25,9 @@
 #driver figure:hover{
   transform: scale(1.1);
 }
+#drivers-grid div{
+  transition: 0.3s;
+}
+#drivers-grid div:hover{
+  transform: scale(1.1)!important;
+}

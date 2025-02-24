@@ -7,7 +7,26 @@ function toggleMenu() {
     element2.style.display = "none";
   }
 }
-// 1  -> Max Verstappen
+
+function mostrarInformacion(num) {
+  fetch("https://query.wikidata.org/sparql?query=" + encodeURIComponent(`
+    SELECT ?wins WHERE {
+      wd:Q196149 ?p ?statement.
+      ?statement ?ps ?wins.
+      ?p wikibase:propertyType wikibase:Quantity;
+         rdfs:label "wins"@en.
+    }
+  `) + "&format=json")
+    .then(response => response.json())
+    .then(data => {
+      const wins = data.results.bindings[0]?.wins.value || "Unknown";
+      console.log("Carlos Sainz Wins:", wins);
+    })
+    .catch(error => console.error("Error fetching data:", error));
+  }  
+  
+
+// 1  -> Max Verstappen-
 // 4  -> Lando Norris
 // 5  -> Gabriel Bortoleto
 // 7  -> Jack Doohan

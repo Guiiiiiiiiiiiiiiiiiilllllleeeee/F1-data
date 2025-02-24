@@ -110,65 +110,130 @@
 
     <!-- Contenido principal -->
     <main>
-      <span class="" id="driver">
+      <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F1 Drivers Grid</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-gray-800 p-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="./index.html" class="text-white font-bold">F1 Drivers</a>
+            <div class="space-x-4">
+                <a href="./index.html" class="text-gray-300 hover:text-white">Home</a>
+                <a href="#" class="text-white font-bold">Drivers</a>
+                <a href="#" class="text-gray-300 hover:text-white">Teams</a>
+                <a href="#" class="text-gray-300 hover:text-white">Tracks</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Drivers Grid -->
+    <main class="max-w-7xl mx-auto p-6">
+        <h1 class="text-3xl font-bold text-gray-900 mb-6">F1 Drivers</h1>
         
-
-<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-  <div>
-     
-<figure class="max-w-lg">
-  <button class="boton-driver" " value="1">
-    <img class="h-auto max-w-full rounded-lg" src="./public/imagenes/sainz.png" alt="image description">
-</button>
-
-  <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">carlos sainz </figcaption>
-</figure>
-
-  </div>
-  <div>
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+          <!-- Piloto 1 -->
+          <div class="relative group cursor-pointer"onclick="mostrarInformacion(55)" >
+              <img src="./public/imagenes/drivers/verstappen.png" alt="Max Verstappen" class="rounded-lg shadow-lg" data-number="1" id="drivers-img" value=1>
+              <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity">
+                  <span class="text-white font-bold text-lg">Max Verstappen</span>
+              </div>
+          </div>
       
-    <figure class="max-w-lg">
-      <button class="boton-driver" " value="2">
-        <img class="h-auto max-w-full rounded-lg" src="./public/imagenes/sainz.png" alt="image description">
-    </button>
-    
-      <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">carlos sainz jr</figcaption>
-    </figure>
+          <!-- Piloto 4 -->
+          <div class="relative group cursor-pointer">
+              <img src="./public/imagenes/drivers/norris.png" alt="Lando Norris" class="rounded-lg shadow-lg" data-number="4">
+              <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity">
+                  <span class="text-white font-bold text-lg">Lando Norris</span>
+              </div>
+          </div>
+      
+          <!-- Piloto 5 -->
+          <div class="relative group cursor-pointer">
+              <img src="./public/imagenes/drivers/bortoleto.png" alt="Gabriel Bortoleto" class="rounded-lg shadow-lg" data-number="5">
+              <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity">
+                  <span class="text-white font-bold text-lg">Gabriel Bortoleto</span>
+              </div>
+          </div>
+      
+          <!-- Piloto 7 -->
+          <div class="relative group cursor-pointer">
+              <img src="./public/imagenes/drivers/doohan.png" alt="Jack Doohan" class="rounded-lg shadow-lg" data-number="7">
+              <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity">
+                  <span class="text-white font-bold text-lg">Jack Doohan</span>
+              </div>
+          </div>
+      
+          <!-- Piloto 10 -->
+          <div class="relative group cursor-pointer">
+              <img src="./public/imagenes/drivers/gasly.png" alt="Pierre Gasly" class="rounded-lg shadow-lg" data-number="10">
+              <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity">
+                  <span class="text-white font-bold text-lg">Pierre Gasly</span>
+              </div>
+          </div>
+      
+          <!-- Agregando más pilotos -->
+          <div class="relative group cursor-pointer">
+              <img src="./public/imagenes/drivers/antonelli.png" alt="Andrea Kimi Antonelli" class="rounded-lg shadow-lg" data-number="12" >
+              <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity">
+                  <span class="text-white font-bold text-lg">Andrea Kimi Antonelli</span>
+              </div>
+          </div>
+      
+          <div class="relative group cursor-pointer">
+              <img src="./public/imagenes/drivers/alonso.png" alt="Fernando Alonso" class="rounded-lg shadow-lg" data-number="14">
+              <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity">
+                  <span class="text-white font-bold text-lg">Fernando Alonso</span>
+              </div>
+          </div>
+      
+          <div class="relative group cursor-pointer">
+              <img src="./public/imagenes/drivers/leclerc.png" alt="Charles Leclerc" class="rounded-lg shadow-lg" data-number="16">
+              <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity">
+                  <span class="text-white font-bold text-lg">Charles Leclerc</span>
+              </div>
+          </div>
+          
+          <div class="relative group cursor-pointer">
+              <img src="./public/imagenes/drivers/stroll.png" alt="Lance Stroll" class="rounded-lg shadow-lg" data-number="18">
+              <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity">
+                  <span class="text-white font-bold text-lg">Lance Stroll</span>
+              </div>
+          </div>
+      
+          <div class="relative group cursor-pointer">
+              <img src="./public/imagenes/drivers/tsunoda.png" alt="Yuki Tsunoda" class="rounded-lg shadow-lg" data-number="22">
+              <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity">
+                  <span class="text-white font-bold text-lg">Yuki Tsunoda</span>
+              </div>
+          </div>
+          
+          <div class="relative group cursor-pointer">
+              <img src="./public/imagenes/drivers/hamilton.png" alt="Lewis Hamilton" class="rounded-lg shadow-lg" data-number="44">
+              <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity">
+                  <span class="text-white font-bold text-lg">Lewis Hamilton</span>
+              </div>
+          </div>
+          
+          <div class="relative group cursor-pointer">
+              <img src="./public/imagenes/drivers/russell.png" alt="George Russell" class="rounded-lg shadow-lg" data-number="63" on>
+              <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity">
+                  <span class="text-white font-bold text-lg">George Russell</span>
+              </div>
+          </div>
+      </div>
+      
+      
+    </main>
+</body>
+</html>
 
-  </div>
-  <div>
-      <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="">
-  </div>
-  <div>
-      <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="">
-  </div>
-  <div>
-      <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" alt="">
-  </div>
-  <div>
-      <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg" alt="">
-  </div>
-  <div>
-      <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg" alt="">
-  </div>
-  <div>
-      <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-7.jpg" alt="">
-  </div>
-  <div>
-      <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-8.jpg" alt="">
-  </div>
-  <div>
-      <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-9.jpg" alt="">
-  </div>
-  <div>
-      <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-10.jpg" alt="">
-  </div>
-  <div>
-      <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-11.jpg" alt="">
-  </div>
-</div>
-
-      </span>
     </main>
     
     <!-- Barra lateral (opcional) -->
