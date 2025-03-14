@@ -1,264 +1,427 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    
-   <script src="https://unpkg.com/@tailwindcss/browser@4"></script> 
-   <script src="./template/main.js"></script>
-   <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi Página sobre F1 - Noticias y Análisis</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css" />
-    <!-- Meta descripción (importante para SEO) -->
-    <meta
-      name="description"
-      content="Últimas noticias, análisis y curiosidades sobre la Fórmula 1. Sigue la temporada, equipos y pilotos con la mejor información."
-    />
 
-    <!-- Palabras clave (ya no es tan importante, pero puede ayudar) -->
-    <meta
-      name="keywords"
-      content="F1, Fórmula 1, Noticias F1, Pilotos F1, Equipos F1"
-    />
-
-    <!-- Meta para Google (indexar correctamente) -->
-    <meta name="robots" content="index, follow" />
-
-    <!-- Open Graph para redes sociales -->
-    <meta
-      property="og:title"
-      content="Mi Página sobre F1 - Noticias y Análisis"
-    />
-    <meta
-      property="og:description"
-      content="Últimas noticias, análisis y curiosidades sobre la Fórmula 1."
-    />
-    <meta property="og:image" content="URL_DE_LA_IMAGEN" />
-    <meta property="og:url" content="URL_DE_TU_WEB" />
-
-    <!-- Favicon -->
-    <link rel="icon" href="./public/imagenes/f1_logo_red.ico" type="image/x-icon" />
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <!-- CSS -->
-   
-  </head>
-  <body>
-    <!-- Encabezado principal con H1 (importante para SEO) -->
-    <header>
-      <div class="min-h-full" >
-        <nav class="bg-gray-800"id="header">
-          <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div class="flex h-16 items-center justify-between">
-              <div class="flex items-center">
-                <div class="shrink-0">
-                 <a href="./index.html"> <img class="size-4" src="./public/imagenes/f1_logo_blanco.png" alt="Your Company" id="logof1"></a>
-                </div>
-                <div class="hidden md:block">
-                  <div class="ml-10 flex items-baseline space-x-4">
-                    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                    <a href="./index.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white" aria-current="page">Home</a>
-                    <a href="#" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white">Drivers</a>
-                    <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Teams</a>
-                    <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Tracks</a>
-                    
-                    
-                    
-                  </div>
-                  
-                </div>
-              
-                
-              </div>
-             
-             
-            </div>
-          </div>
-      
-          <!-- Mobile menu, show/hide based on menu state. -->
-          <div class="md:hidden" id="mobile-menu">
-            <div class="space-y-1 px-2 pt-2 pb-3 sm:px-3">
-              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <button id="boton" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" onclick="toggleMenu()">show/hide</button>
-              <span id="menu-link2">
-              <a href="./index.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white" aria-current="page" id="menu-link">Home</a>
-              <a href="./drivers.html" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"id="menu-link">Drivers</a>
-              <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"id="menu-link">Teams</a>
-              <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"id="menu-link">Tracks</a>
-              
-            </span>
-              
-            </div>
-            
-
-              
-            </div>
-          </div>
-        </nav>
-      
-        <header class="bg-white shadow-sm">
-          <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-            <h1 class="text-3xl font-bold tracking-tight text-gray-900">Drivers</h1>
-          </div>
-        </header>
-        <main>
-          
-          <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-            
-          </div>
-        </main>
-      </div>
-    </header>
-
-    <!-- Contenido principal -->
-    <main>
-      <!DOCTYPE html>
-<html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>F1 Drivers Grid</title>
+
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <script src="./template/main.js"></script>
+  <script src="./template/imports.js"></script>
+  <script src="./template/drivers.js" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Página sobre F1 - Noticias y Análisis</title>
+  
+  <link rel="stylesheet" href="./css/style.css" />
+  <!-- Meta descripción (importante para SEO) -->
+  <meta name="description"
+    content="Últimas noticias, análisis y curiosidades sobre la Fórmula 1. Sigue la temporada, equipos y pilotos con la mejor información." />
+
+  <!-- Palabras clave (ya no es tan importante, pero puede ayudar) -->
+  <meta name="keywords" content="F1, Fórmula 1, Noticias F1, Pilotos F1, Equipos F1" />
+
+  <!-- Meta para Google (indexar correctamente) -->
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph para redes sociales -->
+  <meta property="og:title" content="Mi Página sobre F1 - Noticias y Análisis" />
+  <meta property="og:description" content="Últimas noticias, análisis y curiosidades sobre la Fórmula 1." />
+  <meta property="og:image" content="URL_DE_LA_IMAGEN" />
+  <meta property="og:url" content="URL_DE_TU_WEB" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="./public/imagenes/f1_logo_red.ico" type="image/x-icon" />
+
+  
+  
+  <!-- CSS -->
 
 </head>
-<body class="bg-gray-100">
-    <!-- Navbar -->
-    
 
-    <!-- Drivers Grid -->
-    <main class="max-w-7xl mx-auto p-6">
+<body>
+  <!-- Encabezado principal con H1 (importante para SEO) -->
+  <header>
+    <div class="min-h-full">
+      <nav class="bg-gray-800" id="header">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="flex h-16 items-center justify-between">
+            <div class="flex items-center">
+              <div class="shrink-0">
+                <a href="./index.html"> <img class="size-4" src="./public/imagenes/f1_logo_blanco.png"
+                    alt="Your Company" id="logof1"></a>
+              </div>
+              <div class="hidden md:block">
+                <div class="ml-10 flex items-baseline space-x-4">
+                  
+                  <a href="./index.html"
+                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                    aria-current="page">Home</a>
+                  <a href="#" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white">Drivers</a>
+                  <a href="#"
+                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Teams</a>
+                  <a href="#"
+                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Tracks</a>
+
+
+
+                </div>
+
+              </div>
+
+
+            </div>
+
+
+          </div>
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="md:hidden" id="mobile-menu">
+          <div class="space-y-1 px-2 pt-2 pb-3 sm:px-3">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <button id="boton" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
+              onclick="toggleMenu()">show/hide</button>
+            <span id="menu-link2">
+              <a href="./index.html"
+                class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                aria-current="page" id="menu-link">Home</a>
+              <a href="./drivers.html" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
+                id="menu-link">Drivers</a>
+              <a href="#"
+                class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                id="menu-link">Teams</a>
+              <a href="#"
+                class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                id="menu-link">Tracks</a>
+
+            </span>
+
+          </div>
+
+
+
+        </div>
+    </div>
+    </nav>
+
+    <header class="bg-white shadow-sm">
+      <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+        <h1 class="text-3xl font-bold tracking-tight text-gray-900">Drivers</h1>
+      </div>
+    </header>
+    <main>
+
+      <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+
+      </div>
+    </main>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+    <!DOCTYPE html>
+    <html lang="es">
+
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>F1 Drivers Grid</title>
+
+    </head>
+
+    <body class="bg-gray-100">
+      <!-- Navbar -->
+
+
+      <!-- Drivers Grid -->
+      <main class="max-w-7xl mx-auto p-6">
         <h1 class="text-3xl font-bold text-gray-900 mb-6">F1 Drivers</h1>
-        
-        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6" id="drivers-grid">
           <!-- Piloto 1 -->
-          <div class="relative group cursor-pointer"onclick="mostrarInformacion(55)" >
-              <img src="./public/imagenes/drivers/verstappen.png" alt="Max Verstappen" class="rounded-lg shadow-lg" data-number="1" id="drivers-img" value=1>
-              <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity">
-                  <span class="text-white font-bold text-lg">Max Verstappen</span>
-              </div>
+          <div class="relative group cursor-pointer" onclick="recopilarinformaciontotal(1)">
+            <img src="./public/imagenes/drivers/verstappen.png" alt="Max Verstappen" class="rounded-lg shadow-lg "
+              data-number="1" id="drivers-img" value=1 >
+            <div
+              class="absolute inset-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-80 transition-opacity rounded-lg">
+              <span class="text-white font-bold text-lg">Max Verstappen</span>
+            </div>
           </div>
-      
+
           <!-- Piloto 4 -->
-          <div class="relative group cursor-pointer">
-              <img src="./public/imagenes/drivers/norris.png" alt="Lando Norris" class="rounded-lg shadow-lg" data-number="4">
-              <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity">
-                  <span class="text-white font-bold text-lg">Lando Norris</span>
-              </div>
+          <div class="relative group cursor-pointer"onclick="recopilarinformaciontotal(4)">
+            <img src="./public/imagenes/drivers/norris.png" alt="Lando Norris" class="rounded-lg shadow-lg"
+              data-number="4">
+            <div
+              class="absolute inset-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-80 transition-opacity rounded-lg">
+              <span class="text-white font-bold text-lg">Lando Norris</span>
+            </div>
           </div>
-      
+
           <!-- Piloto 5 -->
-          <div class="relative group cursor-pointer">
-              <img src="./public/imagenes/drivers/bortoleto.png" alt="Gabriel Bortoleto" class="rounded-lg shadow-lg" data-number="5">
-              <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity">
-                  <span class="text-white font-bold text-lg">Gabriel Bortoleto</span>
-              </div>
+          <div class="relative group cursor-pointer"onclick="recopilarinformaciontotal(5)">
+            <img src="./public/imagenes/drivers/bortoleto.png" alt="Gabriel Bortoleto" class="rounded-lg shadow-lg"
+              data-number="5">
+            <div
+              class="absolute inset-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-80 transition-opacity rounded-lg">
+              <span class="text-white font-bold text-lg">Gabriel Bortoleto</span>
+            </div>
           </div>
-      
+
           <!-- Piloto 7 -->
-          <div class="relative group cursor-pointer">
-              <img src="./public/imagenes/drivers/doohan.png" alt="Jack Doohan" class="rounded-lg shadow-lg" data-number="7">
-              <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity">
-                  <span class="text-white font-bold text-lg">Jack Doohan</span>
-              </div>
+          <div class="relative group cursor-pointer" onclick="recopilarinformaciontotal(7)">
+            <img src="./public/imagenes/drivers/doohan.png" alt="Jack Doohan" class="rounded-lg shadow-lg"
+              data-number="7">
+            <div
+              class="absolute inset-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-80 transition-opacity rounded-lg">
+              <span class="text-white font-bold text-lg">Jack Doohan</span>
+            </div>
           </div>
-      
+
           <!-- Piloto 10 -->
-          <div class="relative group cursor-pointer">
-              <img src="./public/imagenes/drivers/gasly.png" alt="Pierre Gasly" class="rounded-lg shadow-lg" data-number="10">
-              <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity">
-                  <span class="text-white font-bold text-lg">Pierre Gasly</span>
-              </div>
+          <div class="relative group cursor-pointer"onclick="recopilarinformaciontotal(10)">
+            <img src="./public/imagenes/drivers/gasly.png" alt="Pierre Gasly" class="rounded-lg shadow-lg"
+              data-number="10">
+            <div
+              class="absolute inset-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-80 transition-opacity rounded-lg">
+              <span class="text-white font-bold text-lg">Pierre Gasly</span>
+            </div>
           </div>
-      
+
           <!-- Agregando más pilotos -->
           <div class="relative group cursor-pointer">
-              <img src="./public/imagenes/drivers/antonelli.png" alt="Andrea Kimi Antonelli" class="rounded-lg shadow-lg" data-number="12" >
-              <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity">
-                  <span class="text-white font-bold text-lg">Andrea Kimi Antonelli</span>
-              </div>
+            <img src="./public/imagenes/drivers/antonelli.png" alt="Andrea Kimi Antonelli" class="rounded-lg shadow-lg"
+              data-number="12">
+            <div
+              class="absolute inset-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-80 transition-opacity rounded-lg">
+              <span class="text-white font-bold text-lg">Andrea Kimi Antonelli</span>
+            </div>
           </div>
-      
+
           <div class="relative group cursor-pointer">
-              <img src="./public/imagenes/drivers/alonso.png" alt="Fernando Alonso" class="rounded-lg shadow-lg" data-number="14">
-              <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity">
-                  <span class="text-white font-bold text-lg">Fernando Alonso</span>
-              </div>
+            <img src="./public/imagenes/drivers/alonso.png" alt="Fernando Alonso" class="rounded-lg shadow-lg"
+              data-number="14">
+            <div
+              class="absolute inset-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-80 transition-opacity rounded-lg">
+              <span class="text-white font-bold text-lg">Fernando Alonso</span>
+            </div>
           </div>
-      
+
+          <div class="relative group cursor-pointer" onclick="recopilarinformaciontotal(16)">
+            <img src="./public/imagenes/drivers/leclerc.png" alt="Charles Leclerc" class="rounded-lg shadow-lg" "
+              data-number="16">
+            <div
+              class="absolute inset-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-80 transition-opacity rounded-lg">
+              <span class="text-white font-bold text-lg">Charles Leclerc</span>
+            </div>
+          </div>
+
           <div class="relative group cursor-pointer">
-              <img src="./public/imagenes/drivers/leclerc.png" alt="Charles Leclerc" class="rounded-lg shadow-lg" data-number="16">
-              <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity">
-                  <span class="text-white font-bold text-lg">Charles Leclerc</span>
-              </div>
+            <img src="./public/imagenes/drivers/stroll.png" alt="Lance Stroll" class="rounded-lg shadow-lg"
+              data-number="18">
+            <div
+              class="absolute inset-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-80 transition-opacity rounded-lg">
+              <span class="text-white font-bold text-lg">Lance Stroll</span>
+            </div>
           </div>
-          
+
           <div class="relative group cursor-pointer">
-              <img src="./public/imagenes/drivers/stroll.png" alt="Lance Stroll" class="rounded-lg shadow-lg" data-number="18">
-              <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity">
-                  <span class="text-white font-bold text-lg">Lance Stroll</span>
-              </div>
+            <img src="./public/imagenes/drivers/tsunoda.png" alt="Yuki Tsunoda" class="rounded-lg shadow-lg"
+              data-number="22">
+            <div
+              class="absolute inset-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-80 transition-opacity rounded-lg">
+              <span class="text-white font-bold text-lg">Yuki Tsunoda</span>
+            </div>
           </div>
-      
+
+          <div class="relative group cursor-pointer" onclick="recopilarinformaciontotal(44)">
+            <img src="./public/imagenes/drivers/hamilton.png" alt="Lewis Hamilton" class="rounded-lg shadow-lg"
+              data-number="44">
+            <div
+              class="absolute inset-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-80 transition-opacity rounded-lg">
+              <span class="text-white font-bold text-lg">Lewis Hamilton</span>
+            </div>
+          </div>
+
           <div class="relative group cursor-pointer">
-              <img src="./public/imagenes/drivers/tsunoda.png" alt="Yuki Tsunoda" class="rounded-lg shadow-lg" data-number="22">
-              <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity">
-                  <span class="text-white font-bold text-lg">Yuki Tsunoda</span>
-              </div>
+            <img src="./public/imagenes/drivers/russell.png" alt="George Russell" class="rounded-lg shadow-lg"
+              data-number="63" on>
+            <div
+              class="absolute inset-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-80 transition-opacity rounded-lg">
+              <span class="text-white font-bold text-lg">George Russell</span>
+            </div>
           </div>
-          
-          <div class="relative group cursor-pointer">
-              <img src="./public/imagenes/drivers/hamilton.png" alt="Lewis Hamilton" class="rounded-lg shadow-lg" data-number="44">
-              <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity">
-                  <span class="text-white font-bold text-lg">Lewis Hamilton</span>
-              </div>
+          <div class="relative group cursor-pointer" onclick="mostrarInformacion(23)">
+            <img src="./public/imagenes/drivers/albon.png" alt="Alexander Albon" class="rounded-lg shadow-lg"
+              data-number="23">
+            <div
+              class="absolute inset-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-80 transition-opacity rounded-lg">
+              <span class="text-white font-bold text-lg">Alexander Albon</span>
+            </div>
           </div>
-          
-          <div class="relative group cursor-pointer">
-              <img src="./public/imagenes/drivers/russell.png" alt="George Russell" class="rounded-lg shadow-lg" data-number="63" on>
-              <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity">
-                  <span class="text-white font-bold text-lg">George Russell</span>
-              </div>
+
+          <div class="relative group cursor-pointer" onclick="mostrarInformacion(27)">
+            <img src="./public/imagenes/drivers/hulkenberg.png" alt="Nico Hülkenberg" class="rounded-lg shadow-lg"
+              data-number="27">
+            <div
+              class="absolute inset-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-80 transition-opacity rounded-lg">
+              <span class="text-white font-bold text-lg">Nico Hülkenberg</span>
+            </div>
           </div>
-      </div>
-      <!-- graficos -->
-      <body class="bg-gray-100">
-        <div class="max-w-4xl mx-auto my-10 p-6 bg-white shadow-lg rounded-lg">
-          <h1 class="text-3xl font-bold text-center mb-5">Puntos de Pilotos de F1 2024</h1>
-          <canvas id="myChart"></canvas>
+
+          <div class="relative group cursor-pointer" onclick="recopilarinformaciontotal(40)">
+            <img src="./public/imagenes/drivers/lawson.png" alt="Liam Lawson" class="rounded-lg shadow-lg"
+              data-number="30">
+            <div
+              class="absolute inset-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-80 transition-opacity rounded-lg">
+              <span class="text-white font-bold text-lg">Liam Lawson</span>
+            </div>
+          </div>
+
+          <div class="relative group cursor-pointer" onclick="mostrarInformacion(31)">
+            <img src="./public/imagenes/drivers/ocon.png" alt="Esteban Ocon" class="rounded-lg shadow-lg"
+              data-number="31">
+            <div
+              class="absolute inset-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-80 transition-opacity rounded-lg">
+              <span class="text-white font-bold text-lg">Esteban Ocon</span>
+            </div>
+          </div>
+
+          <div class="relative group cursor-pointer" onclick="mostrarInformacion(55)">
+            <img src="./public/imagenes/drivers/sainz.png" alt="Carlos Sainz Jr." class="rounded-lg shadow-lg"
+              data-number="55">
+            <div
+              class="absolute inset-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-80 transition-opacity rounded-lg">
+              <span class="text-white font-bold text-lg">Carlos Sainz Jr.</span>
+            </div>
+          </div>
+
+          <div class="relative group cursor-pointer" onclick="mostrarInformacion(81)">
+            <img src="./public/imagenes/drivers/piastri.png" alt="Oscar Piastri" class="rounded-lg shadow-lg"
+              data-number="81">
+            <div
+              class="absolute inset-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-80 transition-opacity rounded-lg">
+              <span class="text-white font-bold text-lg">Oscar Piastri</span>
+            </div>
+          </div>
+
+          <div class="relative group cursor-pointer" onclick="mostrarInformacion(87)">
+            <img src="./public/imagenes/drivers/bearman.png" alt="Oliver Bearman" class="rounded-lg shadow-lg"
+              data-number="87">
+            <div
+              class="absolute inset-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-80 transition-opacity rounded-lg">
+              <span class="text-white font-bold text-lg">Oliver Bearman</span>
+            </div>
+          </div>
+          <div class="relative group cursor-pointer" onclick="mostrarInformacion(87)">
+            <img src="./public/imagenes/drivers/hadjar.png" alt="Isaac hadjar" class="rounded-lg shadow-lg"
+              data-number="87">
+            <div
+              class="absolute inset-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-80 transition-opacity rounded-lg">
+              <span class="text-white font-bold text-lg">Isack Hadjar</span>
+            </div>
+          </div>
         </div>
+        <span id="driver-presentation" class="driver-presentation-class">
+        <section class="py-3 w-full" id="name-and-photo">
+          <div class="container px-4 mx-auto w-full">
+            <div class="relative pt-12 lg:py-18 px-8 md:px-18 rounded-2xl overflow-hidden"><img class="absolute top-0 left-0 h-full w-full object-cover" src="tracker-assets/images/banner-background.png" alt=""/>
+              <div class="relative max-w-sm mx-auto lg:mx-0 mb-16 lg:mb-0">
+                <h3 class="text-3xl font-bold text-white mb-3" id ="driver-name-data"></h3>
+                <span id="drivers-data-main" class="drivers-data-main-class">
+                         <br>
+                         &emsp;<strong>equipo: </strong><span id="equipo"></span>
+                         <br>
+                         &emsp;<strong>edad: </strong><span id="edad"></span></strong>
+                         <br>
+                         &emsp;<strong>nacionalidad: </strong><span id="nacionalidad"></span></strong>
+                         <br>
+                         &emsp;<strong>numero: </strong><span id="numero"></span></strong>
+                         <br>
+                         &emsp;<strong>fecha de nacimiento: </strong><span id="fecha"></span>
+                         <br>
+                         &emsp;<strong>temporadas en f1: </strong><span id="temporadas"></span>
+                         <br>
+                         &emsp;<strong>Ultima victoria: </strong><span id="ultima-victoria"></span>
+                         <br>
+                         &emsp;<strong>Podios: </strong><span id="podios"></span>
+                  </span>
+                <br>
+              </div><img class="hidden lg:block absolute bottom-0 right-20 h-[100%] w-auto object-contain" 
+              src="./public/imagenes/drivers/verstappen.png" 
+              alt="" id="drivers-photo-data"/>
+              
+                
+         <img class="relative lg:hidden block mx-auto" src="./public/imagenes/drivers/verstappen.png" alt="" id ="drivers-photo-data"/>
+         
+            </div>
+          </div>
+        </section>
+        
+     
+      </span>
+      <div class="w-full grid grid-cols-1 sm:grid-cols-2 gap-6 mx-auto">
+        <div class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-lg mt-10 w-full">
+          <h2 class="text-2xl font-bold mb-4 text-gray-900">Resultados cada temporada</h2>
+          <canvas id="resultados_por_temporada"></canvas>
+        </div>
+        <div class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-lg mt-10 w-full">
+          <h2 class="text-2xl font-bold mb-4 text-gray-900">Estadisticas I</h2>
+          <canvas id="barstats"></canvas>
+        </div>
+        <div class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-lg mt-10 w-full">
+          <h2 class="text-2xl font-bold mb-4 text-gray-900">Estadisticas II</h2>
+          <canvas id="barstats"></canvas>
+        </div>
+        <div class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-lg mt-10 w-full">
+          <h2 class="text-2xl font-bold mb-4 text-gray-900">Estadisticas III</h2>
+          <canvas id="barstats"></canvas>
+      </div>
       
-    </main>
-</body>
-</html>
+      
 
-    </main>
     
-    <!-- Barra lateral (opcional) -->
-    <aside></aside>
 
-    <!-- Pie de página -->
-    <footer>
-      
+      </main>
+    </body>
 
-<footer class="bg-white rounded-lg shadow-sm m-4 dark:bg-gray-800">
-  <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"> Willyermo
-  </span>
-  <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
-      <li>
-          <a href="https://github.com/Guiiiiiiiiiiiiiiiiiilllllleeeee" class="hover:underline me-4 md:me-6" target="_blank">Github</a>
-      </li>
-      <li>
-          <a href="https://www.instagram.com/willyermo_05/" class="hover:underline me-4 md:me-6" target="_blank">Instagram</a>
-      </li>
-      <li>
-          <a href="https://stackoverflow.com/users/20424501/guillermo-gonzalez" class="hover:underline me-4 md:me-6" target="_blank">stack overflow</a>
-      </li>
-      <li>
-          <a href="https://open.spotify.com/user/1vbqlw71pg465l14b00n5h2r9?si=7c441845ddd14f9d" class="hover:underline" target="_blank">Spotify</a>
-      </li>
-  </ul>
-  </div>
-</footer>
+    </html>
 
-  </body>
+  </main>
+
+  <!-- Barra lateral (opcional) -->
+  <aside></aside>
+
+  <!-- Pie de página -->
+  <footer>
+
+
+    <footer class="bg-white rounded-lg shadow-sm m-4 dark:bg-gray-800">
+      <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"> Willyermo
+        </span>
+        <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+          <li>
+            <a href="https://github.com/Guiiiiiiiiiiiiiiiiiilllllleeeee" class="hover:underline me-4 md:me-6"
+              target="_blank">Github</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/willyermo_05/" class="hover:underline me-4 md:me-6"
+              target="_blank">Instagram</a>
+          </li>
+          <li>
+            <a href="https://stackoverflow.com/users/20424501/guillermo-gonzalez" class="hover:underline me-4 md:me-6"
+              target="_blank">stack overflow</a>
+          </li>
+          <li>
+            <a href="https://open.spotify.com/user/1vbqlw71pg465l14b00n5h2r9?si=7c441845ddd14f9d"
+              class="hover:underline" target="_blank">Spotify</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+</body>
+
 </html>

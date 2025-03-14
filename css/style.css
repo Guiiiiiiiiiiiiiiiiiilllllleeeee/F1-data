@@ -1,0 +1,60 @@
+
+:root {  
+  --mainred: #FF1801;  
+  --beige: #ffeead;  
+  --yellow: #ffcc5c;  
+}
+  #logof1{
+    width: 60px;
+    transition: 0.3s;
+  }
+  #logof1:hover{
+    transform: scale(1.1);
+  }
+  .f1_logo{
+    width: 100%;
+    margin-top: 30%;
+  }
+  #header {
+    background-color: var(--mainred) !important;
+
+    
+  }
+  #header a{
+    transition:  all 0.5s;
+  }
+  #menu-lnk2{
+    transition: 0.5s;
+  }
+  #driver figure{
+    transition: 0.5s;
+  }
+  #driver figure:hover{
+    transform: scale(1.1);
+  }
+  #drivers-grid div{
+    transition: 0.3s;
+    
+  }
+  #drivers-grid img{
+    transition: 0.3s;
+  }
+  #drivers-grid div:hover img{
+    transform: scale(1.1)!important;
+  }
+  #drivers-grid div:hover{
+    transform: scale(1.1)!important;
+  }
+.driver-presentation-class{
+  display: none;
+  opacity: 0;
+  transition: 0.5s;
+}
+#drivers-data-main{
+  transition: 5 .5s;
+}
+
+
+
+
+/* por terminar */
