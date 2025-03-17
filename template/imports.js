@@ -46,7 +46,7 @@ var barstats;
 function barstats_func() {
     
   
-    var ctx = document.getElementById("barstats").getContext("2d");
+    var ctx = document.getElementById("barstatstotal").getContext("2d");
   // Si el gráfico ya existe, lo destruimos antes de crearlo de nuevo
   if (barstats) {
     barstats.destroy();

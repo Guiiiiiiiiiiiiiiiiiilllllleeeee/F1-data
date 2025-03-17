@@ -6,10 +6,10 @@
       "nacionalidad": "Neerlandés",
       "equipo": "Red Bull Racing",
       "numero": 1,
-      "temporadas": 11,
+      "temporadas": 12,
       "victorias": 63,
       "poles": 40,
-      "podios": 112,
+      "podios": 113,
       "primer_gran_premio": "Australia 2015",
       "ultima_victoria": "Qatar 2024",
       "imagen": "./public/imagenes/drivers/verstappen.png",
@@ -43,7 +43,7 @@
       "nacionalidad": "Neozelandés",
       "equipo": "Red Bull Racing",
       "numero": 40,
-      "temporadas": 2,
+      "temporadas": 3,
       "victorias": 0,
       "poles": 0,
       "podios": 0,
@@ -79,7 +79,7 @@
       "nacionalidad": "Británico",
       "equipo": "Scuderia Ferrari",
       "numero": 44,
-      "temporadas": 18,
+      "temporadas": 19,
       "victorias": 105,
       "poles": 104,
       "podios": 202,
@@ -116,7 +116,7 @@
       "nacionalidad": "Monegasca",
       "equipo": "Scuderia Ferrari",
       "numero": 16,
-      "temporadas": 8,
+      "temporadas": 9,
       "victorias": 8,
       "poles": 26,
       "podios": 43,
@@ -149,34 +149,31 @@
     },
     {
       "nombre": "George Russell",
-      "fecna": 27,
+      "fecna": "15/02/1998",
       "nacionalidad": "Británico",
       "equipo": "Mercedes-AMG Petronas",
       "numero": 63,
       "temporadas": 7,
-      "victorias": 1,
-      "poles": 2,
-      "podios": 10,
+      "victorias": 3,
+      "poles": 5,
+      "podios": 16,
       "primer_gran_premio": "Australia 2019",
       "ultima_victoria": "Brasil 2022",
-      "circuitos_favoritos": [
-        "Silverstone",
-        "Monza"
-      ],
-      "imagen": "https://url-a-su-imagen.com",
+      
+      "imagen": "./public/imagenes/drivers/russell.png",
       "resultados_mundial": {
         "2019": 20,
         "2020": 18,
         "2021": 15,
         "2022": 4,
-        "2023": 7,
-        "2024": 5
+        "2023": 8,
+        "2024": 6
       },"color":"#C8CCCE"
     },
     {
       "nombre": "Andrea Kimi Antonelli",
-      "fecna": 18,
-      "nacionalidad": "Italiano",
+      "fecna": "25/08/2006",
+      "nacionalidad": "Italiana",
       "equipo": "Mercedes-AMG Petronas",
       "numero": 77,
       "temporadas": 1,
@@ -189,7 +186,7 @@
         "Monza",
         "Imola"
       ],
-      "imagen": "https://url-a-su-imagen.com",
+      "imagen": "./public/imagenes/drivers/antonelli.png",
       "resultados_mundial": {},"color":"#C8CCCE"
     },
     {
