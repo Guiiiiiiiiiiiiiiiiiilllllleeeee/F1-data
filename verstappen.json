@@ -191,23 +191,20 @@
     },
     {
       "nombre": "Fernando Alonso",
-      "fecna": 43,
+      "fecha_nacimiento": "29/07/1981",
       "nacionalidad": "Español",
       "equipo": "Aston Martin",
       "numero": 14,
-      "temporadas": 21,
+      "temporadas": 22,
       "victorias": 32,
       "poles": 22,
-      "podios": 97,
+      "podios": 106,
       "primer_gran_premio": "Australia 2001",
       "ultima_victoria": "España 2013",
-      "circuitos_favoritos": [
-        "Suzuka",
-        "Spa-Francorchamps"
-      ],
-      "imagen": "https://url-a-su-imagen.com",
+      "imagen": "./public/imagenes/drivers/alonso.png",
       "resultados_mundial": {
-        "2001": 23,
+        "2001": null,
+        "2002": null,
         "2003": 6,
         "2004": 4,
         "2005": 1,
@@ -215,36 +212,47 @@
         "2007": 3,
         "2008": 5,
         "2009": 9,
-        "2010": 4
-      },"color":"verde"
-    },{
-       "nombre": "Lando Norris",
-      "fecna": 34,
-      "nacionalidad": "Español",
-      "equipo": "Aston Martin",
-      "numero": 4,
-      "temporadas": 21,
-      "victorias": 32,
-      "poles": 22,
-      "podios": 97,
-      "primer_gran_premio": "Australia 2001",
-      "ultima_victoria": "España 2013",
-      "circuitos_favoritos": [
-        "Suzuka",
-        "Spa-Francorchamps"
-      ],
-      "imagen": "https://url-a-su-imagen.com",
-      "resultados_mundial": {
-        "2001": 23,
-        "2003": 6,
-        "2004": 4,
-        "2005": 1,
-        "2006": 1,
-        "2007": 3,
-        "2008": 5,
-        "2009": 9,
-        "2010": 4
-      },"color":"verde" 
+        "2010": 2,
+        "2011": 4,
+        "2012": 2,
+        "2013": 2,
+        "2014": 6,
+        "2015": 17,
+        "2016": 10,
+        "2017": 15,
+        "2018": 11,
+        "2019": null,
+        "2020": null,
+        "2021": 10,
+        "2022": 9,
+        "2023": 4,
+        "2024": 9
+      },
+      "color": "green"
     }
+      ,{
+        "nombre": "Lando Norris",
+        "fecha_nacimiento": "13/11/1999",
+        "nacionalidad": "Británico",
+        "equipo": "McLaren",
+        "numero": 4,
+        "temporadas": 7,
+        "victorias": 5,
+        "poles": 9,
+        "podios": 27,
+        "primer_gran_premio": "Australia 2019",
+        "ultima_victoria": "Australia 2025",
+        "imagen": "./public/imagenes/drivers/norris.png",
+        "resultados_mundial": {
+          "2019": 11,
+          "2020": 9,
+          "2021": 6,
+          "2022": 7,
+          "2023": 6,
+          "2024": 2        
+        },
+        "color": "papaya"
+      }
+      
   ]
 }   
