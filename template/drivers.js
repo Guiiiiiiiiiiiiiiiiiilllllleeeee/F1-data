@@ -23,7 +23,7 @@ fetch('https://ergast.com/api/f1/drivers/sainz/results.xml')
    // XML Document
 async function get_Data(numero) {
   try {
-    const response = await fetch("https://guiiiiiiiiiiiiiiiiiilllllleeeee.github.io/F1-data/verstappen.json");
+    const response = await fetch("../verstappen.json");
     const response2=await fetch("https://ergast.com/api/f1/drivers/sainz/results.json");
     
     if (!response.ok) {

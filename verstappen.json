@@ -149,7 +149,7 @@
     },
     {
       "nombre": "George Russell",
-      "fecna": "15/02/1998",
+      "fecna": "02/15/1998",
       "nacionalidad": "Británico",
       "equipo": "Mercedes-AMG Petronas",
       "numero": 63,
@@ -172,7 +172,7 @@
     },
     {
       "nombre": "Andrea Kimi Antonelli",
-      "fecna": "25/08/2006",
+      "fecna": "08/25/2006",
       "nacionalidad": "Italiana",
       "equipo": "Mercedes-AMG Petronas",
       "numero": 77,
@@ -191,7 +191,7 @@
     },
     {
       "nombre": "Fernando Alonso",
-      "fecha_nacimiento": "29/07/1981",
+      "fecha_nacimiento": "09/30/1997",
       "nacionalidad": "Español",
       "equipo": "Aston Martin",
       "numero": 14,
@@ -232,7 +232,7 @@
     }
       ,{
         "nombre": "Lando Norris",
-        "fecha_nacimiento": "13/11/1999",
+        "fecha_nacimiento": "11/13/1999",
         "nacionalidad": "Británico",
         "equipo": "McLaren",
         "numero": 4,
@@ -252,7 +252,25 @@
           "2024": 2        
         },
         "color": "papaya"
+      },{
+        "nombre": "Jack Doohan",
+        "fecha_nacimiento": "01/20/2003",
+        "nacionalidad": "Australiano",
+        "equipo": "Alpine",
+        "numero": 7,
+        "temporadas": 1,
+        "victorias": 0,
+        "poles": 0,
+        "podios": 0,
+        "primer_gran_premio": "Australia 2025",
+        "ultima_victoria": null,
+        "imagen": "./public/imagenes/drivers/doohan.png",
+        "resultados_mundial": {
+          "2025": null
+        },
+        "color": "azul"
       }
+      
       
   ]
 }   
